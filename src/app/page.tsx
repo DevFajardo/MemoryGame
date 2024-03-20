@@ -1,12 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { CardType } from "@/app/type";
-import JSConfetti from "js-confetti";
 import { pointsAnimate, cardsReady } from "@/app/lib/utils";
-import GameBoard from "./components/GameBoard";
 import Aside from "./components/Aside";
-
-const jsConfetti = new JSConfetti();
+import Section from "./components/Section";
 
 export default function Home() {
   const [cards, setCards] = useState<CardType[]>([]);
@@ -30,23 +27,16 @@ export default function Home() {
         setPoints={setPoints}
         points={points}
       />
-      <section className="flex flex-wrap place-content-center ">
-        {cards.map((card: CardType) => {
-          return (
-            <GameBoard
-              cards={cards}
-              card={card}
-              isDisabled={isDisabled}
-              flippedCards={flippedCards}
-              setCards={setCards}
-              setFlippedCards={setFlippedCards}
-              setIsDisabled={setIsDisabled}
-              setPoints={setPoints}
-              points={points}
-            />
-          );
-        })}
-      </section>
+      <Section
+        cards={cards}
+        isDisabled={isDisabled}
+        flippedCards={flippedCards}
+        setCards={setCards}
+        setFlippedCards={setFlippedCards}
+        setIsDisabled={setIsDisabled}
+        setPoints={setPoints}
+        points={points}
+      />
     </main>
   );
 }

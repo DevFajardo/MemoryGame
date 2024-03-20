@@ -1,7 +1,8 @@
-import { CardType } from "@/app/type";
+
+import { WinnerType } from "@/app/type";
 import { resetGame } from '@/app/lib/utils';   
 
-export default function WinnerSeccion({cards, setCards, setPoints} : {cards: CardType[], setCards: Function, setPoints: Function}) {
+export default function WinnerSeccion({cards, setCards, setPoints} : WinnerType) {
   return (
     <>
       <h3 className="text-center text-5xl my-5 font-bold">YOU WIN</h3>

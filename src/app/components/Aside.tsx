@@ -1,17 +1,12 @@
 import WinnerSeccion from "@/app/components/WinnerSeccion";
-import { CardType } from "@/app/type";
+import { AsideType } from "@/app/type";
 
 export default function Aside({
   cards,
   setCards,
   setPoints,
   points,
-}: {
-  cards: CardType[];
-  setCards: Function;
-  setPoints: Function;
-  points: number;
-}) {
+}: AsideType) {
   return (
     <>
       <aside className="justify-center flex flex-col  w-1/3 flex-initial">

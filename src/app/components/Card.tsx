@@ -1,5 +1,5 @@
 import { logicGame } from "@/app/lib/utils";
-import { CardType } from "@/app/type";
+import { GameBoardType } from "@/app/type";
 export default function Card({
   cards,
   card,
@@ -10,17 +10,7 @@ export default function Card({
   setIsDisabled,
   setPoints,
   points,
-}: {
-  cards: CardType[];
-  card: CardType;
-  isDisabled: boolean;
-  flippedCards: CardType[];
-  setCards: Function;
-  setFlippedCards: Function;
-  setIsDisabled: Function;
-  setPoints: Function;
-  points: number;
-}) {
+}: GameBoardType) {
   return (
     <div
       onClick={() => {

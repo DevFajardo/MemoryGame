@@ -1,4 +1,4 @@
-import { CardType } from "@/app/type";
+import { GameBoardType } from "@/app/type";
 import Card from "./Card";
 export default function GameBoard({
   cards,
@@ -10,17 +10,7 @@ export default function GameBoard({
   setIsDisabled,
   setPoints,
   points,
-}: {
-  cards: CardType[];
-  card: CardType;
-  isDisabled: boolean;
-  flippedCards: CardType[];
-  setCards: Function;
-  setFlippedCards: Function;
-  setIsDisabled: Function;
-  setPoints: Function;
-  points: number;
-}) {
+}: GameBoardType) {
   return (
     <>
       <Card
