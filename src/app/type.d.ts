@@ -6,42 +6,31 @@ export type CardType = {
   matched: boolean;
 };
 
-export type PropsType = {
-
+export type CommonType = {
   cards: CardType[];
   setCards: Function;
+  setPoints: Function;
+}
+
+export type PropsType = CommonType & {
   flippedCards: CardType[];
   setFlippedCards: Function;
   isDisabled: boolean;
   setIsDisabled: Function;
-  setPoints: Function;
   points: number;
 
 }
 
-export type GameBoardType = {
-  cards: CardType[];
+export type GameBoardType = CommonType &{
   card: CardType;
-  setCards: Function;
   flippedCards: CardType[];
   setFlippedCards: Function;
   isDisabled: boolean;
   setIsDisabled: Function;
-  setPoints: Function;
   points: number;
 }
 
-export type AsideType = {
-
-  cards: CardType[];
-  setCards: Function;
-  setPoints: Function;
+export type AsideType = CommonType &{
   points: number;
-
 }
 
-export type WinnerType = {
-  cards: CardType[];
-  setCards: Function;
-  setPoints: Function;
-}

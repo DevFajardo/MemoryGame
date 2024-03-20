@@ -1,5 +1,4 @@
-
-import GameBoard from "@/app/components/GameBoard";
+import Card from "@/app/components/Card";
 import { CardType, PropsType } from "@/app/type";
 
 export default function Section({
@@ -13,10 +12,11 @@ export default function Section({
   points,
 }: PropsType) {
   return (
-    <section className="flex flex-wrap place-content-center ">
+    <section className="flex flex-wrap place-content-center">
       {cards.map((card: CardType) => {
         return (
-          <GameBoard
+          <Card
+            key={card.id}
             cards={cards}
             card={card}
             isDisabled={isDisabled}

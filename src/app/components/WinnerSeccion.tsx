@@ -1,8 +1,8 @@
 
-import { WinnerType } from "@/app/type";
+import { CommonType } from "@/app/type";
 import { resetGame } from '@/app/lib/utils';   
 
-export default function WinnerSeccion({cards, setCards, setPoints} : WinnerType) {
+export default function WinnerSeccion({cards, setCards, setPoints} : CommonType) {
   return (
     <>
       <h3 className="text-center text-5xl my-5 font-bold">YOU WIN</h3>

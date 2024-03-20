@@ -35,7 +35,7 @@ export default function Card({
         }`}
       >
         <div className="back"></div>
-        <div className="front flex justify-center items-center text-6xl">
+        <div id="imgDiv" className="front flex justify-center items-center text-6xl">
           {card.img}
         </div>
       </div>
