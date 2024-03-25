@@ -30,7 +30,7 @@ export type GameBoardType = CommonType &{
   points: number;
 }
 
-export type AsideType = CommonType &{
+export type AsideType ={
   points: number;
 }
 

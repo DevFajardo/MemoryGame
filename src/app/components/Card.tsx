@@ -26,7 +26,7 @@ export default function Card({
           points
         );
       }}
-      className="card m-5 cursor-pointer"
+      className="card m-4 cursor-pointer"
       key={card.id}
     >
       <div
