@@ -29,9 +29,7 @@ export default function Home() {
         setPoints={setPoints}
       />
       
-    ) : (
-      ""
-    )}
+    ) : null}
 
     <main className={`h-screen flex justify-center ${cards?.every((card) => card.matched) ? "opacity-5" : ""}`}>
       <Aside
