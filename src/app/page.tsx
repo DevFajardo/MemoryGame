@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="h-screen flex justify-center">
       <HomeProvider>
-        {<HomeContent/>}
+        <HomeContent/>
       </HomeProvider>
     </main>
   );
