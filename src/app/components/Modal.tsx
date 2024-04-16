@@ -12,7 +12,6 @@ export default function Modal({ cards, setCards, setPoints, state }: CommonType)
     };
 
     return ReactDOM.createPortal(
-        // Add the required arguments here
         <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center">
             <div className="rounded-lg shadow-xl p-4 flex flex-col text-center modalContainer">
                 <h3 className="text-8xl my-5 font-bold">YOU WIN</h3>
