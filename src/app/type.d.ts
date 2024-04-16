@@ -10,7 +10,7 @@ export type CommonType = {
   cards: CardType[];
   setCards: Function;
   setPoints: Function;
-  state: boolean;
+  state?: boolean;
 }
 
 export type PropsType = CommonType & {
