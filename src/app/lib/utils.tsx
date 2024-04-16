@@ -24,6 +24,7 @@ export const pointsAnimate = () => {
     points?.classList.remove("pointsBeat");
   }, 2000);
 };
+
 export const cardsReady = (setCards: Function) => {
   const shuffleCards = shuffleData(duplicateData);
   setCards(shuffleCards);

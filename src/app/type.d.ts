@@ -34,3 +34,13 @@ export type AsideType = CommonType &{
   points: number;
 }
 
+export interface CardContextType {
+  cards: CardType[];
+  setCards: React.Dispatch<React.SetStateAction<CardType[]>>;
+  flippedCards: CardType[];
+  setFlippedCards: React.Dispatch<React.SetStateAction<CardType[]>>;
+  isDisabled: boolean;
+  setIsDisabled: React.Dispatch<React.SetStateAction<boolean>>;
+  points: number;
+  setPoints: React.Dispatch<React.SetStateAction<number>>;
+}
