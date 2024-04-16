@@ -1,12 +1,6 @@
-import WinnerSeccion from "@/app/components/WinnerSeccion";
 import { AsideType } from "@/app/type";
 
-export default function Aside({
-  cards,
-  setCards,
-  setPoints,
-  points,
-}: AsideType) {
+export default function Aside({points}: AsideType) {
   return (
     <>
       <aside className="justify-center flex flex-col  w-1/3 flex-initial">
@@ -16,15 +10,6 @@ export default function Aside({
         <h2 id="points" className="text-center text-2xl font-bold">
           Points : {points}
         </h2>
-        {cards?.every((card) => card.matched) ? (
-          <WinnerSeccion
-            cards={cards}
-            setCards={setCards}
-            setPoints={setPoints}
-          />
-        ) : (
-          ""
-        )}
       </aside>
     </>
   );

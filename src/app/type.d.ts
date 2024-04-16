@@ -10,6 +10,7 @@ export type CommonType = {
   cards: CardType[];
   setCards: Function;
   setPoints: Function;
+  state: boolean;
 }
 
 export type PropsType = CommonType & {
@@ -30,7 +31,7 @@ export type GameBoardType = CommonType &{
   points: number;
 }
 
-export type AsideType = CommonType &{
+export type AsideType = {
   points: number;
 }
 
